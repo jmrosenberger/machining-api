@@ -1,37 +1,119 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "john doe",
-            "email": "john@doe.com",
-            "address": "1234 united way",
-            "phone": "555-555-5555",
-            "isAdmin": true
-        },
-        {
-            "id": 2,
-            "name": "jane doe",
-            "email": "jane@doe.com",
-            "address": "4321 way united",
-            "phone": "111-111-1111",
-            "isAdmin": false
-        }
-
-    ],
-    "quotes": [
-        {
-            "id": 1,
-            "userId": 2,
-            "price": "500.00",
-            "approverId": 1,
-            "dateReceived": "dateReceived"
-        }
-    ],
-    "orders": [
-        {
-            "id": 1,
-            "quoteId": 1,
-            "dateApproved": "dateApproved"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@doe.com",
+      "address": "1234 united way",
+      "phone": "555-555-5555",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "jane@doe.com",
+      "address": "4321 way united",
+      "phone": "111-111-1111",
+      "isAdmin": false
+    },
+    {
+      "name": "Joshua Rosenberger",
+      "address": "4300 Founders Way",
+      "email": "joshua@rosenberger.com",
+      "phone": "4235441561",
+      "isAdmin": false,
+      "id": 3
+    },
+    {
+      "name": "Angel Keltner",
+      "address": "3205 Whites Creek Pike",
+      "email": "angel@keltner.com",
+      "phone": "4235441561",
+      "isAdmin": false,
+      "id": 4
+    },
+    {
+      "name": "Katie Rosenberger",
+      "address": "1234 something drive",
+      "email": "katie@rose.com",
+      "phone": "5555555555",
+      "isAdmin": false,
+      "id": 5
+    },
+    {
+      "name": "Gunner Michael",
+      "address": "500 something fierce sounding drive",
+      "email": "gunner@turd.com",
+      "phone": "5555555555",
+      "id": 6
+    },
+    {
+      "name": "seth p",
+      "address": "something drive",
+      "email": "seth@p.com",
+      "phone": "5555555555",
+      "id": 7
+    },
+    {
+      "id": 8
+    }
+  ],
+  "quotes": [
+    {
+      "userId": 1,
+      "requestId": 3,
+      "priceQuoted": 3333,
+      "isAccepted": true,
+      "inProgress": false,
+      "isCompleted": true,
+      "status": "COMPLETED JOB",
+      "date": "Thu Sep 23 2021 02:11:59 GMT-0500 (Central Daylight Time)",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "requestId": 2,
+      "priceQuoted": 2222,
+      "isAccepted": true,
+      "inProgress": false,
+      "isCompleted": true,
+      "status": "COMPLETED JOB",
+      "date": "Thu Sep 23 2021 02:12:12 GMT-0500 (Central Daylight Time)",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "requestId": 1,
+      "priceQuoted": 1111,
+      "isAccepted": true,
+      "inProgress": false,
+      "isCompleted": true,
+      "status": "COMPLETED JOB",
+      "date": "Thu Sep 23 2021 02:12:16 GMT-0500 (Central Daylight Time)",
+      "id": 3
+    }
+  ],
+  "requests": [
+    {
+      "userId": 2,
+      "material": "TEST 1",
+      "description": "TEST 1",
+      "dateRequested": "Thu Sep 23 2021 02:08:18 GMT-0500 (Central Daylight Time)",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "material": "TEST 2",
+      "description": "TEST 2",
+      "dateRequested": "Thu Sep 23 2021 02:08:36 GMT-0500 (Central Daylight Time)",
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "material": "TEST 3",
+      "description": "TEST 3",
+      "dateRequested": "Thu Sep 23 2021 02:08:55 GMT-0500 (Central Daylight Time)",
+      "id": 3
+    }
+  ]
 }
